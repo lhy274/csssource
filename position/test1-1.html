@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .lastest-news {
+        width: 350px;
+        height: 145px;
+        border: 2px solid #ccc;
+        position: relative;
+        margin-top: 40px;
+        /* margin: 0 auto;
+        top: 75px; */
+        /* left: calc(50% - 175px);  이거 안됨
+        top: calc(50% - 72px); */
+      }
+      .read-more {
+        background: black;
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        right: 0;
+        /* bottom: 110%; 나는 이렇게 했지만   */
+        /* bottom: 155px;  이렇게 해도 되고*/
+        /* bottom: calc(100% + 10px); */
+        /* top: calc(0% - 40px); 이것도 같은 뜻이네 */
+
+        padding: 0 10px;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lastest-news">
+      <ul>
+        <li>리스트 1</li>
+        <li>리스트 2</li>
+        <li>리스트 3</li>
+        <li>리스트 4</li>
+        <li>리스트 5</li>
+      </ul>
+      <a href="#" class="read-more">Read more</a>
+    </div>
+  </body>
+</html>

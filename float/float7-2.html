@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습46</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .portfolio {
+        width: 960px;
+        margin: 100px auto;
+        background-color: black;
+        overflow: hidden;
+      }
+      .portfolio li {
+        width: 225px;
+        height: 225px;
+        background-color: teal;
+        margin-right: 20px;
+        list-style-type: none;
+        float: left;
+        margin-bottom: 20px;
+      }
+      .portfolio li:nth-child(4n) {
+        margin-right: 0;
+      }
+      /* portfolio li:nth-child(4n)  && margin-bottom: 20px; 만 추가 하면 끝나는 구나 */
+    </style>
+  </head>
+  <body>
+    <ul class="portfolio">
+      <li>pic1</li>
+      <li>pic2</li>
+      <li>pic3</li>
+      <li>pic4</li>
+      <li>pic1</li>
+      <li>pic2</li>
+      <li>pic3</li>
+      <li>pic4</li>
+      <li>pic1</li>
+      <li>pic2</li>
+      <li>pic3</li>
+      <li>pic4</li>
+    </ul>
+  </body>
+</html>
