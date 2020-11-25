@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #333338;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+
+      .container .main-sontent {
+        display: inline-block;
+      }
+      .container .sidebar {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      .container .panel {
+        background-color: white;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #333338;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #444;
+      }
+      .container {
+        display: flex;
+      }
+
+      .container .main-content {
+        display: inline-block;
+        background-color: wheat;
+        padding: 10px;
+      }
+      .container .sidebar {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px;
+        background-color: wheat;
+      }
+      .container .panel {
+        background-color: white;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      h1,
+      h3,
+      p {
+        margin: 0 auto;
+        padding: 10px;
+      }
+      img {
+        margin: 0 auto;
+        padding: 10px;
+        vertical-align: top;
+      }
+
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-sontent">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
+            nesciunt dolorum doloribus illum, ducimus explicabo. Maiores earum
+            et similique quis repellat minus veritatis explicabo eveniet iure?
+            Quaerat debitis quod quae?
+          </p>
+          <img src="http://placehold.it/200" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            alias earum esse harum quibusdam saepe velit a, unde nobis assumenda
+            provident, dolores omnis, animi consectetur distinctio iusto quasi
+            nostrum quae!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            alias earum esse harum quibusdam saepe velit a, unde nobis assumenda
+            provident, dolores omnis, animi consectetur distinctio iusto quasi
+            nostrum quae!
+          </p>
+          <h3>SubTitle</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            alias earum esse harum quibusdam saepe velit a, unde nobis assumenda
+            provident, dolores omnis, animi consectetur distinctio iusto quasi
+            nostrum quae!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            alias earum esse harum quibusdam saepe velit a, unde nobis assumenda
+            provident, dolores omnis, animi consectetur distinctio iusto quasi
+            nostrum quae!
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quod
+            molestiae dolores, sed commodi similique! Obcaecati reprehenderit et
+            odio, dignissimos soluta eaque quibusdam omnis consequuntur nobis,
+            ipsam in nulla magni!
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quod
+            molestiae dolores, sed commodi similique!
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

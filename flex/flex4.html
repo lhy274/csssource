@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row; /* row(기본), column, column-reverse,row-reverse */
+        border: 1px solid;
+        justify-content: space-around; /*flex-start(기본), space-evenly  flex-end center  space-between space-around  */
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+      }
+      .container div:first-child {
+        background-color: red;
+      }
+      .container div:nth-child(2) {
+        background-color: blue;
+      }
+      .container div:last-child {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>flex-item</div>
+      <div>flex-item</div>
+      <div>flex-item</div>
+    </div>
+  </body>
+</html>

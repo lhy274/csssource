@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습 flexible 75</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        /* margin: 0; // 이부분은 필요 없었네
+        padding: 0; */
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+      }
+      /* .main-nav {
+        border: 1px solid;
+      } */
+      .main-nav .menu {
+        /* 그냥 .menu로 찍었는데 상위에서 내려오는 menu라고 해줘야 정확한듯 */
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #eee;
+        list-style-type: none;
+        height: 60px;
+        /* margin: 10px 5px; */
+      }
+      .menu li {
+        padding: 4px;
+        padding-top: 14px;
+      }
+      .menu li a {
+        color: black;
+        text-decoration: none;
+      }
+      .menu .fa {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+      }
+      .menu .menu-text {
+        display: inline-block;
+      }
+      .menu h4,
+      .menu p {
+        margin: 0;
+      }
+      .menu p {
+        font-size: 12px;
+      }
+      /* .menu a {
+      }
+      .fa {
+      }
+      h4 {
+        font-size: 1.2em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        float: left;
+      } */
+    </style>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul class="menu">
+        <li class="menu-home">
+          <a href="">
+            <i class="fa fa-home"></i>
+            <div class="menu-text">
+              <h4>HOME</h4>
+              <p>Start Here</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-products">
+          <a href="">
+            <i class="fa fa-shopping-basket"></i>
+            <div class="menu-text">
+              <h4>PRODUCTS</h4>
+              <p>Shop Now</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-blog">
+          <a href="">
+            <i class="fa fa-pencil"></i>
+            <div class="menu-text">
+              <h4>BLOG</h4>
+              <p>My Thought</p>
+            </div>
+          </a>
+        </li>
+        <li class="menu-contact">
+          <a href="">
+            <i class="fa fa-phone"></i>
+            <div class="menu-text">
+              <h4>CONTACT</h4>
+              <p>Get in Touch</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

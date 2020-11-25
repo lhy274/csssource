@@ -17,8 +17,9 @@
       .mainmeun ul {
         background-color: #666;
         display: none;
+        list-style-type: none;
       }
-      .mainmeun li {
+      .mainmeun > li {
         float: left;
         list-style-type: none;
         margin-right: 30px;
@@ -26,8 +27,16 @@
         color: #fff;
       }
       .mainmeun > li:hover ul {
+        /* 메뉴의 li에 호버가 아니라 ul li에 호버가 된듯. 색 바꾸기 하니까 서브 메뉴 색만 변함 */
+        /* 끝에 ul 지우니까 li 메인 메뉴에 서브 메뉴가 겹쳐서 나옴 */
+        /* display block은 서브 메뉴 보이기고, position absolute는 호버 할때 배경이 늘어가는 걸 막아줌 */
         display: block;
+        /* inline-block 쓰니까 옆으로 나옴. 그냥 block은 아래로 나오고, inline-block의 특징!! 인라인특성과 블럭 특성을 모두 가진다 */
         position: absolute;
+        /* position absolute를 .mainmeun ul에 넣어도 변화 없었음. 그대로 작동. */
+      }
+      .mainmeun > li:hover {
+        color: mediumaquamarine;
       }
       .mainmeun > li ul li {
         padding: 0 10px;

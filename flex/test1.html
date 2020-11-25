@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open sans";
+        background-color: #ecf0f1;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background-color: #fff;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
+          assumenda debitis doloremque! Rerum, laboriosam illo quo provident
+          consectetur expedita ea qui accusantium atque inventore numquam optio
+          temporibus soluta? Iste, tenetur? Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Architecto quo, pariatur molestias odio
+          quisquam nobis saepe earum aliquid repellendus amet optio eius et,
+          porro dolores natus exercitationem facere laboriosam ratione.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
+          assumenda debitis doloremque! Rerum, laboriosam illo quo provident
+          consectetur expedita ea qui accusantium atque inventore numquam optio
+          temporibus soluta? Iste, tenetur? Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Harum, vel. Maxime deleniti suscipit,
+          vero aperiam voluptatem sunt consequuntur ipsa at amet itaque dolores?
+          Saepe esse tempore necessitatibus. Deleniti, officiis doloribus.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,</p>
+      </aside>
+    </div>
+  </body>
+</html>

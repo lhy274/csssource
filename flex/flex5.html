@@ -7,23 +7,16 @@
     <style>
       .container {
         display: flex;
-        /* flex-direction: row-reverse; row(기본), column, column-reverse,row-reverse */
-        flex-wrap: wrap-reverse; /* 이건 엔터야  flex-direction 축*/
-        /* wrap-reverse 크게 볼 때는 ABC 순서대로 인데 줄이면 E부터 오고 순서가 뒤가 앞으로 당기고 그러는듯 그런데 꼭 완전 순서대로는 아닌듯*/
+        border: 2px solid;
+        flex-wrap: wrap;
+        height: 400px;
+        /* stretch(기본) flex-start  flex-end  center space-between  space-around */
+        align-content: space-around;
       }
-      /* .container div {  /원래 3번/
-        width: 200px;
-        height: 100px;
-        border: 4px dashed;
-      } */
       .container div {
         width: 200px;
         height: 100px;
-        border: 4px dashed;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border: 3px dashed;
       }
       .container div:first-child {
         background-color: red;
